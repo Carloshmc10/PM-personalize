@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Conta - Personalize Ateliê</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Minha Conta</h1>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="sobre-nos.html">Sobre Nós</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Bem-vindo, [Nome do Usuário]</h2>
+
+        <form action="server/update_user.php" method="POST">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" value="[Email do Usuário]" required>
+
+            <label for="password">Nova Senha:</label>
+            <input type="password" id="password" name="password">
+
+            <button type="submit">Atualizar</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Personalize Ateliê</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Personalize Ateliê</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Login</h1>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="sobre-nos.html">Sobre Nós</a>
+            <a href="catalogo.html">Catálogo</a>
+        </nav>
+    </header>
+
+    <main>
+        <form action="server/process_login.php" method="POST" class="form-container">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required placeholder="Digite seu e-mail">
+            
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required placeholder="Digite sua senha">
+            
+            <button type="submit">Entrar</button>
+        </form>
+
+        <div class="form-footer">
+            <p>Não tem uma conta? <a href="cadastro.html">Cadastre-se</a></p>
+            <p><a href="recuperar-senha.html">Esqueceu sua senha?</a></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>Contato: contato@personalizeatelie.com.br</p>
+    </footer>
+</body>
+</html>

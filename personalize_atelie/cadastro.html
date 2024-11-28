@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Personalize Ateliê</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Cadastro</h1>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="sobre-nos.html">Sobre Nós</a>
+            <a href="catalogo.html">Catálogo</a>
+        </nav>
+    </header>
+
+    <main>
+        <form action="server/process_cadastro.php" method="POST" class="form-container">
+            <label for="username">Nome de Usuário:</label>
+            <input type="text" id="username" name="username" required placeholder="Escolha um nome de usuário">
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required placeholder="Digite seu e-mail">
+
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required placeholder="Crie uma senha">
+
+            <label for="confirm_password">Confirme a Senha:</label>
+            <input type="password" id="confirm_password" name="confirm_password" required placeholder="Confirme sua senha">
+
+            <button type="submit">Cadastrar</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>Contato: contato@personalizeatelie.com.br</p>
+    </footer>
+</body>
+</html>
